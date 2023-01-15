@@ -5,6 +5,7 @@
   - Extract the VRBot folder to your desired location, and double click setup.exe
   - Optionally create a shortcut for VRBot.application or setup.exe and drag to Desktop for quick access
   - Once open, type ? into the program for help
+  - Use version command for help about version
   - Use version check to check for updates
   - Currently the Stable and Experimental versions are both the same, however in the future the experimental will run on a newer, less tested database.
   - Type in any error code, error message, or any questions you have and the bot will tell you if it has found a response or not.
