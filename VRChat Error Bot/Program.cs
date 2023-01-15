@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -18,12 +17,9 @@ namespace VRChat_Error_Bot
         {
 
             v.vType = "Stable";
-            v.v = "v1.0.0";
+            v.v = "v1.1.0";
 
-            string db = "database.json";
-
-            string json = File.ReadAllText(db);
-            List<ErrorCode> errorCodeList = JsonConvert.DeserializeObject<List<ErrorCode>>(json);
+            string db = "/database.json";
 
             Console.WriteLine("Type ? for help.");
 
@@ -31,6 +27,15 @@ namespace VRChat_Error_Bot
 
             while (true)
             {
+
+                var assembly = Assembly.GetExecutingAssembly();
+                //Getting names of all embedded resources
+                var pathToFile = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + db;
+
+                var json = File.ReadAllText(pathToFile);
+
+                List<ErrorCode> errorCodeList = JsonConvert.DeserializeObject<List<ErrorCode>>(json);
+
                 isCommand = false;
                 string userInput = Console.ReadLine();
                 if (userInput.ToLower() == "exit")
@@ -71,7 +76,14 @@ namespace VRChat_Error_Bot
 
                             if (await v.CheckUpdateAsync() == false)
                             {
-                                Console.WriteLine("You are on the latest version!");
+                                if (v.limited == true)
+                                {
+                                    Console.WriteLine("You are currently limited on the GitHub API, please try again in 1+ hour(s).");
+                                }
+                                else 
+                                { 
+                                    Console.WriteLine("You are on the latest version!");
+                                }
                             } else
                             {
                                 Console.WriteLine("The latest version is " + v.newV);

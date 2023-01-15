@@ -15,23 +15,35 @@ namespace VRChat_Error_Bot
 
         public string v;
         public string vType;
-        public string newV;
+        public string newV = "";
         public string url;
-        public Release latestRelease;
+        public bool limited = false;
 
         public async Task CheckAsync()
         {
             using (var client = new HttpClient())
             {
+
+                limited = false;
+
                 client.DefaultRequestHeaders.UserAgent.TryParseAdd("my-user-agent-string");
-                var response = await client.GetAsync("https://api.github.com/repos/ifBars/ProTVConverter/releases");
+                var response = await client.GetAsync("https://api.github.com/repos/ifBars/VRC-Error-Bot/releases");
                 var content = await response.Content.ReadAsStringAsync();
-                JArray releases = JArray.Parse(content);
-                string htmlUrl = releases[0]["html_url"].Value<string>();
-                int startIndex = htmlUrl.IndexOf("tag/") + "tag/".Length;
-                string version = htmlUrl.Substring(startIndex);
-                newV = version;
-                url = htmlUrl;
+
+                if (content.Contains("API rate limit exceeded for"))
+                {
+                    limited = true;
+                }
+                else
+                {
+                    JArray releases = JArray.Parse(content);
+                    string htmlUrl = releases[0]["html_url"].Value<string>();
+                    int startIndex = htmlUrl.IndexOf("tag/") + "tag/".Length;
+                    string version = htmlUrl.Substring(startIndex);
+                    newV = version;
+                    url = htmlUrl;
+                }
+
             }
         }
 
@@ -43,7 +55,11 @@ namespace VRChat_Error_Bot
             if (v == newV)
             {
                 return false;
-            } else
+            }
+            else if (newV == "")
+            {
+                return false;
+            }else 
             {
                 return true;
             }

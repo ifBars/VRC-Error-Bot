@@ -1,0 +1,67 @@
+[
+    {
+        "Code": "vrchat sdk not found",
+        "Message": "The VRChat SDK has not been found",
+        "Response": "This error occurs when the VRChat SDK is not correctly imported into the Unity project. To fix this, ensure that the SDK is correctly imported and that the necessary assets are included in the project. You can also try to reload your SDK."
+    },
+    {
+        "Code": "failed to upload world",
+        "Message": "Failed to Upload World",
+        "Response": "This error can occur when there is a problem with the Unity project, such as missing assets or incorrect settings. Make sure that all assets are properly imported and that the build settings are correct."
+    },
+	{
+        "Code": "sdk control panel is blank",
+        "Message": "The SDK Control Panel is blank and does not show any options / missing VRCUrlInputField",
+        "Response": "In the Project window, navigate to Assets/VRCSDK/Plugins, Select all DLLs, right-click and then press 'Reimport' This should also fix the issue if your Video Players no longer have a VRCUrlInputField."
+    },
+	{
+        "Code": "valid world prefab",
+        "Message": "Could not find a valid world prefab",
+        "Response": "This error can occur if the world prefab is missing or is not properly set up. Make sure that the world prefab is correctly set up and that all necessary assets are included in the project."
+    },
+	{
+        "Code": "valid player prefab",
+        "Message": "Could not find a valid player prefab",
+        "Response": "This error can occur if the player prefab is missing or is not properly set up. Make sure that the player prefab is correctly set up and that all necessary assets are included in the project."
+    },
+	{
+        "Code": "instance of the world",
+        "Message": "Failed to create an instance of the world",
+        "Response": "This error can occur if there is a problem with the world prefab or the build settings. Make sure that the world prefab is correctly set up and that the build settings are correct."
+    },
+	{
+        "Code": "instance of the player",
+        "Message": "Failed to create an instance of the player",
+        "Response": "This error can occur if there is a problem with the player prefab or the build settings. Make sure that the player prefab is correctly set up and that the build settings are correct."
+    },
+    {
+        "Code": "invalid scene format",
+        "Message": "Invalid scene format",
+        "Response": "This error can occur when the scene format is not compatible with VRChat. Ensure that the scene is properly set up and that all assets are correctly added."
+    },
+	{
+        "Code": "exposed to udon",
+        "Message": "is not exposed to udon",
+        "Response": "This error can occur when a Udon script in your scene is using a method that is not exposed to Udon. This is something you would have to fix in the code of the script."
+    },
+	{
+        "Code": "pot textures",
+        "Message": "Crunch Compression can only be used with POT Textures",
+        "Response": "In order to use Crunch Compression with textures, your textures must be POT textures, this means Power of Two, I suggest you google POT Textures for more info."
+    },
+	{
+        "Code": "big world size",
+        "Message": "World Size too big",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+	{
+	    "Code": "shrink world size",
+        "Message": "How can I shrink the size of my world",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+	{
+	    "Code": "references a missing script",
+        "Message": "that references a missing script. Please change the script or remove it from the GameObject.",
+		"Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
+	}
+]

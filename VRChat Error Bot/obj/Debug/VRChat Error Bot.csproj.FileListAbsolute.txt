@@ -17,3 +17,7 @@ C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\OpenSSL.
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\OpenSSL.PrivateKeyDecoder.xml
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\OpenSSL.X509Certificate2.Provider.xml
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.csproj.AssemblyReference.cache
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat_Error_Bot.Properties.Resources.resources
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.csproj.GenerateResource.cache
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\database.json
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\databaseex.json
