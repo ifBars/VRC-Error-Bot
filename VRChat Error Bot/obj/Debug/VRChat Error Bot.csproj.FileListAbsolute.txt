@@ -1,0 +1,19 @@
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\VRChat Error Bot.exe.config
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\VRChat Error Bot.exe.manifest
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\VRChat Error Bot.application
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\VRChat Error Bot.exe
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\VRChat Error Bot.pdb
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.csproj.CoreCompileInputs.cache
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.exe.manifest
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.application
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.csproj.CopyComplete
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.exe
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.pdb
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\CloudrailSI.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\OpenSSL.PrivateKeyDecoder.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\OpenSSL.X509Certificate2.Provider.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\OpenSSL.PrivateKeyDecoder.xml
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\OpenSSL.X509Certificate2.Provider.xml
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.csproj.AssemblyReference.cache
