@@ -60,8 +60,23 @@
         "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
     },
 	{
+	    "Code": "big world",
+        "Message": "My world is too big",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+	{
 	    "Code": "references a missing script",
         "Message": "that references a missing script. Please change the script or remove it from the GameObject.",
+		"Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
+	},
+	{
+	    "Code": "error CS0234",
+        "Message": "does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)",
+		"Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
+	},
+	{
+	    "Code": "missing script",
+        "Message": "Please change the script or remove it from the GameObject.",
 		"Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
 	}
 ]
