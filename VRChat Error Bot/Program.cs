@@ -133,15 +133,23 @@ namespace VRChat_Error_Bot
                 if (isCommand == false)
                 {
 
-                    if (userInput.Length < 9)
+                    if (userInput.Length < 4)
                         userInput = "NONE";
 
-                        string errorCode = Regex.Match(userInput, @"\b(error|code)?\s?(\d{3})\b").Groups[2].Value;
-                        var error = errorCodeList.Find(e => e.Code == errorCode || e.Message.IndexOf(userInput, StringComparison.OrdinalIgnoreCase) >= 0);
-                        if (error != null)
-                            Console.WriteLine(error.Response);
-                        else
-                            Console.WriteLine("No matching error code or message was found.");
+                    string modifiedInput = Regex.Replace(userInput, @"'(.*?)'", "''");
+                    string errorCode = Regex.Match(modifiedInput, @"\b(error|code)?\s?(\d{3})\b").Groups[2].Value;
+                    var error = errorCodeList.Find(e => e.Code.IndexOf(modifiedInput, StringComparison.OrdinalIgnoreCase) >= 0 || e.Message.IndexOf(modifiedInput, StringComparison.OrdinalIgnoreCase) >= 0);
+
+                    if (error != null)
+                    {
+                        Console.Clear();
+                        Console.WriteLine(error.Response);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("No matching error code or message was found.");
+                    }
 
                 }
 

@@ -9,27 +9,27 @@
         "Message": "Failed to Upload World",
         "Response": "This error can occur when there is a problem with the Unity project, such as missing assets or incorrect settings. Make sure that all assets are properly imported and that the build settings are correct."
     },
-	{
+    {
         "Code": "sdk control panel is blank",
         "Message": "The SDK Control Panel is blank and does not show any options / missing VRCUrlInputField",
         "Response": "In the Project window, navigate to Assets/VRCSDK/Plugins, Select all DLLs, right-click and then press 'Reimport' This should also fix the issue if your Video Players no longer have a VRCUrlInputField."
     },
-	{
+    {
         "Code": "valid world prefab",
         "Message": "Could not find a valid world prefab",
         "Response": "This error can occur if the world prefab is missing or is not properly set up. Make sure that the world prefab is correctly set up and that all necessary assets are included in the project."
     },
-	{
+    {
         "Code": "valid player prefab",
         "Message": "Could not find a valid player prefab",
         "Response": "This error can occur if the player prefab is missing or is not properly set up. Make sure that the player prefab is correctly set up and that all necessary assets are included in the project."
     },
-	{
+    {
         "Code": "instance of the world",
         "Message": "Failed to create an instance of the world",
         "Response": "This error can occur if there is a problem with the world prefab or the build settings. Make sure that the world prefab is correctly set up and that the build settings are correct."
     },
-	{
+    {
         "Code": "instance of the player",
         "Message": "Failed to create an instance of the player",
         "Response": "This error can occur if there is a problem with the player prefab or the build settings. Make sure that the player prefab is correctly set up and that the build settings are correct."
@@ -39,49 +39,104 @@
         "Message": "Invalid scene format",
         "Response": "This error can occur when the scene format is not compatible with VRChat. Ensure that the scene is properly set up and that all assets are correctly added."
     },
-	{
+    {
         "Code": "exposed to udon",
         "Message": "is not exposed to udon",
         "Response": "This error can occur when a Udon script in your scene is using a method that is not exposed to Udon. This is something you would have to fix in the code of the script."
     },
-	{
+    {
+        "Code": "crunch compression",
+        "Message": "how to use crunch compression",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+    {
         "Code": "pot textures",
         "Message": "Crunch Compression can only be used with POT Textures",
         "Response": "In order to use Crunch Compression with textures, your textures must be POT textures, this means Power of Two, I suggest you google POT Textures for more info."
     },
-	{
+    {
         "Code": "big world size",
         "Message": "World Size too big",
         "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
     },
-	{
-	    "Code": "shrink world size",
+    {
+        "Code": "shrink world size",
         "Message": "How can I shrink the size of my world",
         "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
     },
-	{
-	    "Code": "big world",
+    {
+        "Code": "big world",
         "Message": "My world is too big",
         "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
     },
-	{
-	    "Code": "references a missing script",
+    {
+        "Code": "references a missing script",
         "Message": "that references a missing script. Please change the script or remove it from the GameObject.",
-		"Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
-	},
-	{
-	    "Code": "error CS0234",
+        "Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
+    },
+    {
+        "Code": "error CS0234",
         "Message": "does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)",
-		"Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
-	},
-	{
-	    "Code": "Component at index",
+        "Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
+    },
+    {
+        "Code": "Component at index",
         "Message": "could not be loaded when loading game object",
-		"Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
-	},
-	{
-	    "Code": "missing script",
+        "Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
+    },
+    {
+        "Code": "missing script",
         "Message": "Please change the script or remove it from the GameObject.",
-		"Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
-	}
+        "Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
+    },
+    {
+        "Code": "CS0103",
+        "Message": "The name '' does not exist in the current context",
+        "Response": "This error occurs when the variable or class you are trying to use has not been declared or is not in scope. Make sure that the variable or class has been properly declared and that it is in the correct scope."
+    },
+    {
+        "Code": "CS0111",
+        "Message": "Type '' already defines a member called '' with the same parameter types.",
+        "Response": "This occurs when a method or property is defined with the same name and parameters as another method or property in the same class or struct."
+    },
+    {
+        "Code": "CS0122",
+        "Message": "'' is inaccessible due to its protection level.",
+        "Response": "This occurs when trying to access a member that has a more restrictive access level (e.g. private) than the current context."
+    },
+    {
+        "Code": "CS0246",
+        "Message": "The type or namespace name '' could not be found (are you missing a using directive or an assembly reference?)",
+        "Response": "This occurs when a type or namespace is not found in the current project."
+    },
+    {
+        "Code": "CS0426",
+        "Message": "The type name '' does not exist in the type ''.",
+        "Response": "This occurs when a type is not found in the specified namespace or assembly."
+    },
+    {
+        "Code": "CS1501",
+        "Message": "No overload for method '' takes '' arguments.",
+        "Response": "This occurs when calling a method with the wrong number of arguments."
+    },
+    {
+        "Code": "CS0165",
+        "Message": "Use of unassigned local variable ''.",
+        "Response": "This occurs when a local variable is used without being assigned a value first."
+    },
+    {
+        "Code": "CS1061",
+        "Message": "'' does not contain a definition for '' and no accessible extension method '' accepting a first argument of type '' could be found.",
+        "Response": "This occurs when trying to access a member that does not exist on an object."
+    },
+    {
+        "Code": "CS0029",
+        "Message": "Cannot implicitly convert type '' to ''",
+        "Response": "This error occurs when you are trying to assign a variable of one type to a variable of another type without an explicit conversion. You need to use a cast or a conversion method to convert the value to the correct type."
+    },
+    {
+        "Code": "CS0120",
+        "Message": "An object reference is required for the non-static field, method, or property ''",
+        "Response": "This error occurs when you are trying to access a non-static member of a class without creating an instance of the class. To fix this, you need to create an instance of the class before accessing the non-static member."
+    }
 ]
