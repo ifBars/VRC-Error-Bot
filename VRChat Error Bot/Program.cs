@@ -17,7 +17,7 @@ namespace VRChat_Error_Bot
         {
 
             v.vType = "Stable";
-            v.v = "v1.1.0";
+            v.v = "v1.3.1";
 
             string db = "/database.json";
 
@@ -177,7 +177,6 @@ namespace VRChat_Error_Bot
                         {
                             error = errorCodeList.Find(e => e.Code.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0 || e.Message.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0);
                             Console.Clear();
-                            Console.WriteLine("No matching error code or message was found, but keyword '" + keyword + "' was found in the input.");
                             Console.WriteLine(error.Response);
                             break;
                         }
