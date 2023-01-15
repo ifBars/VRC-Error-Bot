@@ -17,7 +17,7 @@ namespace VRChat_Error_Bot
         {
 
             v.vType = "Stable";
-            v.v = "v1.3.2";
+            v.v = "v1.3.3";
 
             string db = "/database.json";
 
