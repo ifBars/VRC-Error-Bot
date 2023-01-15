@@ -76,6 +76,8 @@ namespace VRChat_Error_Bot
 
                     Console.Clear();
 
+                    isCommand = true;
+
                     if (userInput == "version")
                     {
                         Console.WriteLine("Invalid command. Type 'version check' to check current version.");
@@ -86,9 +88,6 @@ namespace VRChat_Error_Bot
 
                     if (hasInput == true)
                     {
-                        
-
-                        isCommand = true;
                         
                         string versionInput = userInput.ToLower().Substring("version ".Length);
                         // Do something with versionInput

@@ -1,0 +1,227 @@
+[
+    {
+        "Code": "vrchat sdk not found",
+        "Message": "The VRChat SDK has not been found",
+        "Response": "This error occurs when the VRChat SDK is not correctly imported into the Unity project. To fix this, ensure that the SDK is correctly imported and that the necessary assets are included in the project. You can also try to reload your SDK."
+    },
+    {
+        "Code": "vrchat video player",
+        "Message": "How can I play videos in VRChat",
+        "Response": "In order to play videos in a VRC World, you will need a video player asset, I recommend ProTV by ArchiTechAnon. If you need to convert a youtube playlist to ProTV format, you can use ifBars/ProTVConverter on github"
+    },
+    {
+        "Code": "custom emotes",
+        "Message": "How can I create a custom emotes in VRChat?",
+        "Response": "You can create custom emotes in VRChat by using Unity and the VRChat SDK. First, you will need to create an animation in Unity and then use the VRC_Emote component to add the animation to a prefab. Once the prefab is uploaded to VRChat, players can use the emote by selecting it in the emote menu."
+    },
+    {
+        "Code": "custom world",
+        "Message": "How can I create a custom world in VRChat?",
+        "Response": "You can create a custom world in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets and layout for your world in Unity and then use the VRC_SceneDescriptor component to add the scene to a prefab. Once the prefab is uploaded to VRChat, players can enter your world by clicking on it in the world list."
+    },
+    {
+        "Code": "custom avatar",
+        "Message": "How can I create a custom avatar in VRChat?",
+        "Response": "You can create a custom avatar in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets for your avatar in Unity and then use the VRC_AvatarDescriptor component to add the avatar to a prefab. Once the prefab is uploaded to VRChat, players can use your avatar by selecting it in the avatar menu."
+    },
+    {
+        "Code": "teleport",
+        "Message": "How can I create a custom teleport system in VRChat?",
+        "Response": "You can create a custom teleport system in VRChat by using Unity and the VRChat SDK. I suggest PlayerBush001's 'How to Teleport a Player - Udon / VRChat SDK3.0' youtube video."
+    },
+    {
+        "Code": "custom emotes",
+        "Message": "How to create a custom emotes in VRChat?",
+        "Response": "You can create custom emotes in VRChat by using Unity and the VRChat SDK. First, you will need to create an animation in Unity and then use the VRC_Emote component to add the animation to a prefab. Once the prefab is uploaded to VRChat, players can use the emote by selecting it in the emote menu."
+    },
+    {
+        "Code": "custom world",
+        "Message": "How to create a custom world in VRChat?",
+        "Response": "You can create a custom world in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets and layout for your world in Unity and then use the VRC_SceneDescriptor component to add the scene to a prefab. Once the prefab is uploaded to VRChat, players can enter your world by clicking on it in the world list."
+    },
+    {
+        "Code": "custom avatar",
+        "Message": "How to create a custom avatar in VRChat?",
+        "Response": "You can create a custom avatar in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets for your avatar in Unity and then use the VRC_AvatarDescriptor component to add the avatar to a prefab. Once the prefab is uploaded to VRChat, players can use your avatar by selecting it in the avatar menu."
+    },
+    {
+        "Code": "teleport",
+        "Message": "How to create a custom teleport system in VRChat?",
+        "Response": "You can create a custom teleport system in VRChat by using Unity and the VRChat SDK. I suggest PlayerBush001's 'How to Teleport a Player - Udon / VRChat SDK3.0' youtube video."
+    },
+    {
+        "Code": "VRChat SDK Error: VRC_EventHandler",
+        "Message": "VRChat SDK Error: VRC_EventHandler has not been added to the scene.",
+        "Response": "This error occurs when the VRC_EventHandler is not added to the scene. To fix this, you need to add the VRC_EventHandler prefab to the scene from the VRChat SDK folder."
+    },
+    {
+        "Code": "VRChat SDK Error: VRC_SceneDescriptor",
+        "Message": "VRChat SDK Error: VRC_SceneDescriptor has not been added to the scene.",
+        "Response": "This error occurs when the VRC_SceneDescriptor is not added to the scene. To fix this, you need to add the VRC_SceneDescriptor prefab to the scene from the VRChat SDK folder."
+    },
+    {
+        "Code": "CS0117",
+        "Message": "'' does not contain a definition for ''.",
+        "Response": "This error occurs when the compiler cannot find a definition for a specific member (such as a field or method) in the specified class or namespace. This can happen if the class or namespace is not imported, if the class or namespace is not spelled correctly, or if the member is not defined in the class or namespace. This error can also occur if the member is defined but it's not accessible in the current context. Make sure that the class or namespace is properly imported and that the member is spelled correctly. Also, check the accessibility level of the member, if the member is private or protected, you can't access it from outside the class. It's also important to check for typos or misspellings in the name of the class, namespace or member.,"
+    },
+    {
+        "Code": "VRChat SDK Error: VRC_AvatarDescriptor",
+        "Message": "VRChat SDK Error: VRC_AvatarDescriptor is not found on the player.",
+        "Response": "This error occurs when the VRC_AvatarDescriptor is not found on the player object. To fix this, you need to add the VRC_AvatarDescriptor component to the player object from the VRChat SDK folder."
+    },
+    {
+        "Code": "VRChat SDK Error: VRC_Player",
+        "Message": "VRChat SDK Error: VRC_Player has not been added to the scene.",
+        "Response": "This error occurs when the VRC_Player is not added to the scene. To fix this, you need to add the VRC_Player prefab to the scene from the VRChat SDK folder."
+    },
+    {
+        "Code": "failed to upload world",
+        "Message": "Failed to Upload World",
+        "Response": "This error can occur when there is a problem with the Unity project, such as missing assets or incorrect settings. Make sure that all assets are properly imported and that the build settings are correct."
+    },
+    {
+        "Code": "sdk control panel is blank",
+        "Message": "The SDK Control Panel is blank and does not show any options / missing VRCUrlInputField",
+        "Response": "In the Project window, navigate to Assets/VRCSDK/Plugins, Select all DLLs, right-click and then press 'Reimport' This should also fix the issue if your Video Players no longer have a VRCUrlInputField."
+    },
+    {
+        "Code": "valid world prefab",
+        "Message": "Could not find a valid world prefab",
+        "Response": "This error can occur if the world prefab is missing or is not properly set up. Make sure that the world prefab is correctly set up and that all necessary assets are included in the project."
+    },
+    {
+        "Code": "valid player prefab",
+        "Message": "Could not find a valid player prefab",
+        "Response": "This error can occur if the player prefab is missing or is not properly set up. Make sure that the player prefab is correctly set up and that all necessary assets are included in the project."
+    },
+    {
+        "Code": "instance of the world",
+        "Message": "Failed to create an instance of the world",
+        "Response": "This error can occur if there is a problem with the world prefab or the build settings. Make sure that the world prefab is correctly set up and that the build settings are correct."
+    },
+    {
+        "Code": "instance of the player",
+        "Message": "Failed to create an instance of the player",
+        "Response": "This error can occur if there is a problem with the player prefab or the build settings. Make sure that the player prefab is correctly set up and that the build settings are correct."
+    },
+    {
+        "Code": "invalid scene format",
+        "Message": "Invalid scene format",
+        "Response": "This error can occur when the scene format is not compatible with VRChat. Ensure that the scene is properly set up and that all assets are correctly added."
+    },
+    {
+        "Code": "exposed to udon",
+        "Message": "is not exposed to udon",
+        "Response": "This error can occur when a Udon script in your scene is using a method that is not exposed to Udon. This is something you would have to fix in the code of the script."
+    },
+    {
+        "Code": "crunch compression",
+        "Message": "how to use crunch compression",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+    {
+        "Code": "pot textures",
+        "Message": "Crunch Compression can only be used with POT Textures",
+        "Response": "In order to use Crunch Compression with textures, your textures must be POT textures, this means Power of Two, I suggest you google POT Textures for more info."
+    },
+    {
+        "Code": "big world size",
+        "Message": "World Size too big",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+    {
+        "Code": "shrink world size",
+        "Message": "How can I shrink the size of my world",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+    {
+        "Code": "big world",
+        "Message": "My world is too big",
+        "Response": "If your VRC world is big in file size, you can use crunch texture compression, and mesh compression to shrink your world. I suggest Iconoclass's 'Reduce Build Size of Large Unity Scenes' video on youtube."
+    },
+    {
+        "Code": "references a missing script",
+        "Message": "that references a missing script. Please change the script or remove it from the GameObject.",
+        "Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
+    },
+    {
+        "Code": "error CS0234",
+        "Message": "does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)",
+        "Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
+    },
+    {
+        "Code": "Component at index",
+        "Message": "could not be loaded when loading game object",
+        "Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
+    },
+    {
+        "Code": "missing script",
+        "Message": "Please change the script or remove it from the GameObject.",
+        "Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
+    },
+    {
+        "Code": "CS0103",
+        "Message": "The name '' does not exist in the current context",
+        "Response": "This error occurs when the variable or class you are trying to use has not been declared or is not in scope. Make sure that the variable or class has been properly declared and that it is in the correct scope."
+    },
+    {
+        "Code": "CS0111",
+        "Message": "Type '' already defines a member called '' with the same parameter types.",
+        "Response": "This occurs when a method or property is defined with the same name and parameters as another method or property in the same class or struct."
+    },
+    {
+        "Code": "CS0122",
+        "Message": "'' is inaccessible due to its protection level.",
+        "Response": "This occurs when trying to access a member that has a more restrictive access level (e.g. private) than the current context."
+    },
+    {
+        "Code": "CS0246",
+        "Message": "The type or namespace name '' could not be found (are you missing a using directive or an assembly reference?)",
+        "Response": "This occurs when a type or namespace is not found in the current project."
+    },
+    {
+        "Code": "CS0426",
+        "Message": "The type name '' does not exist in the type ''.",
+        "Response": "This occurs when a type is not found in the specified namespace or assembly."
+    },
+    {
+        "Code": "CS1501",
+        "Message": "No overload for method '' takes '' arguments.",
+        "Response": "This occurs when calling a method with the wrong number of arguments."
+    },
+    {
+        "Code": "CS0165",
+        "Message": "Use of unassigned local variable ''.",
+        "Response": "This occurs when a local variable is used without being assigned a value first."
+    },
+    {
+        "Code": "CS1061",
+        "Message": "'' does not contain a definition for '' and no accessible extension method '' accepting a first argument of type '' could be found.",
+        "Response": "This occurs when trying to access a member that does not exist on an object."
+    },
+    {
+        "Code": "CS0051",
+        "Message": "Inconsistent accessibility: parameter type '' is less accessible than method ''.",
+        "Response": "This occurs when the accessibility of a parameter is more restrictive than the accessibility of the containing method."
+    },
+    {
+        "Code": "CS0136",
+        "Message": "A local or parameter named '' cannot be declared in this scope because that name is used in an enclosing scope to define a local or parameter.",
+        "Response": "This occurs when a local variable or parameter is declared with the same name as another local variable or parameter in an enclosing scope."
+    },
+    {
+        "Code": "CS0539",
+        "Message": "'' in explicit interface declaration is not a member of interface.",
+        "Response": "This occurs when an explicit interface implementation references a member that does not exist in the interface."
+    },
+    {
+        "Code": "CS0029",
+        "Message": "Cannot implicitly convert type '' to ''",
+        "Response": "This error occurs when you are trying to assign a variable of one type to a variable of another type without an explicit conversion. You need to use a cast or a conversion method to convert the value to the correct type."
+    },
+    {
+        "Code": "CS0120",
+        "Message": "An object reference is required for the non-static field, method, or property ''",
+        "Response": "This error occurs when you are trying to access a non-static member of a class without creating an instance of the class. To fix this, you need to create an instance of the class before accessing the non-static member."
+    }
+]
