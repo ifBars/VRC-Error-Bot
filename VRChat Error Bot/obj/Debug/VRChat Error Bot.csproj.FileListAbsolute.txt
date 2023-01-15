@@ -21,3 +21,4 @@ C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat_E
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat Error Bot.csproj.GenerateResource.cache
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\database.json
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\databaseex.json
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\common.json

@@ -5,6 +5,51 @@
         "Response": "This error occurs when the VRChat SDK is not correctly imported into the Unity project. To fix this, ensure that the SDK is correctly imported and that the necessary assets are included in the project. You can also try to reload your SDK."
     },
     {
+        "Code": "vrchat video player",
+        "Message": "How can I play videos in VRChat",
+        "Response": "In order to play videos in a VRC World, you will need a video player asset, I recommend ProTV by ArchiTechAnon. If you need to convert a youtube playlist to ProTV format, you can use ifBars/ProTVConverter on github"
+    },
+    {
+        "Code": "custom emotes",
+        "Message": "How can I create a custom emotes in VRChat?",
+        "Response": "You can create custom emotes in VRChat by using Unity and the VRChat SDK. First, you will need to create an animation in Unity and then use the VRC_Emote component to add the animation to a prefab. Once the prefab is uploaded to VRChat, players can use the emote by selecting it in the emote menu."
+    },
+    {
+        "Code": "custom world",
+        "Message": "How can I create a custom world in VRChat?",
+        "Response": "You can create a custom world in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets and layout for your world in Unity and then use the VRC_SceneDescriptor component to add the scene to a prefab. Once the prefab is uploaded to VRChat, players can enter your world by clicking on it in the world list."
+    },
+    {
+        "Code": "custom avatar",
+        "Message": "How can I create a custom avatar in VRChat?",
+        "Response": "You can create a custom avatar in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets for your avatar in Unity and then use the VRC_AvatarDescriptor component to add the avatar to a prefab. Once the prefab is uploaded to VRChat, players can use your avatar by selecting it in the avatar menu."
+    },
+    {
+        "Code": "teleport",
+        "Message": "How can I create a custom teleport system in VRChat?",
+        "Response": "You can create a custom teleport system in VRChat by using Unity and the VRChat SDK. I suggest PlayerBush001's 'How to Teleport a Player - Udon / VRChat SDK3.0' youtube video."
+    },
+    {
+        "Code": "custom emotes",
+        "Message": "How to create a custom emotes in VRChat?",
+        "Response": "You can create custom emotes in VRChat by using Unity and the VRChat SDK. First, you will need to create an animation in Unity and then use the VRC_Emote component to add the animation to a prefab. Once the prefab is uploaded to VRChat, players can use the emote by selecting it in the emote menu."
+    },
+    {
+        "Code": "custom world",
+        "Message": "How to create a custom world in VRChat?",
+        "Response": "You can create a custom world in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets and layout for your world in Unity and then use the VRC_SceneDescriptor component to add the scene to a prefab. Once the prefab is uploaded to VRChat, players can enter your world by clicking on it in the world list."
+    },
+    {
+        "Code": "custom avatar",
+        "Message": "How to create a custom avatar in VRChat?",
+        "Response": "You can create a custom avatar in VRChat by using Unity and the VRChat SDK. First, you will need to create the assets for your avatar in Unity and then use the VRC_AvatarDescriptor component to add the avatar to a prefab. Once the prefab is uploaded to VRChat, players can use your avatar by selecting it in the avatar menu."
+    },
+    {
+        "Code": "teleport",
+        "Message": "How to create a custom teleport system in VRChat?",
+        "Response": "You can create a custom teleport system in VRChat by using Unity and the VRChat SDK. I suggest PlayerBush001's 'How to Teleport a Player - Udon / VRChat SDK3.0' youtube video."
+    },
+    {
         "Code": "VRChat SDK Error: VRC_EventHandler",
         "Message": "VRChat SDK Error: VRC_EventHandler has not been added to the scene.",
         "Response": "This error occurs when the VRC_EventHandler is not added to the scene. To fix this, you need to add the VRC_EventHandler prefab to the scene from the VRChat SDK folder."
