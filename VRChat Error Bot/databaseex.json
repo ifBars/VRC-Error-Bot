@@ -50,27 +50,27 @@
         "Response": "You can create a custom teleport system in VRChat by using Unity and the VRChat SDK. I suggest PlayerBush001's 'How to Teleport a Player - Udon / VRChat SDK3.0' youtube video."
     },
     {
-        "Code": "VRChat SDK Error: VRC_EventHandler",
+        "Code": "vrchat sdk error: vrc_eventhandler",
         "Message": "VRChat SDK Error: VRC_EventHandler has not been added to the scene.",
         "Response": "This error occurs when the VRC_EventHandler is not added to the scene. To fix this, you need to add the VRC_EventHandler prefab to the scene from the VRChat SDK folder."
     },
     {
-        "Code": "VRChat SDK Error: VRC_SceneDescriptor",
+        "Code": "vrchat sdk error: vrc_scenedescriptor",
         "Message": "VRChat SDK Error: VRC_SceneDescriptor has not been added to the scene.",
         "Response": "This error occurs when the VRC_SceneDescriptor is not added to the scene. To fix this, you need to add the VRC_SceneDescriptor prefab to the scene from the VRChat SDK folder."
     },
     {
-        "Code": "CS0117",
+        "Code": "cs0117",
         "Message": "'' does not contain a definition for ''.",
         "Response": "This error occurs when the compiler cannot find a definition for a specific member (such as a field or method) in the specified class or namespace. This can happen if the class or namespace is not imported, if the class or namespace is not spelled correctly, or if the member is not defined in the class or namespace. This error can also occur if the member is defined but it's not accessible in the current context. Make sure that the class or namespace is properly imported and that the member is spelled correctly. Also, check the accessibility level of the member, if the member is private or protected, you can't access it from outside the class. It's also important to check for typos or misspellings in the name of the class, namespace or member.,"
     },
     {
-        "Code": "VRChat SDK Error: VRC_AvatarDescriptor",
+        "Code": "vrchat sdk error: vrc_avatardescriptor",
         "Message": "VRChat SDK Error: VRC_AvatarDescriptor is not found on the player.",
         "Response": "This error occurs when the VRC_AvatarDescriptor is not found on the player object. To fix this, you need to add the VRC_AvatarDescriptor component to the player object from the VRChat SDK folder."
     },
     {
-        "Code": "VRChat SDK Error: VRC_Player",
+        "Code": "vrchat sdk error: vrc_player",
         "Message": "VRChat SDK Error: VRC_Player has not been added to the scene.",
         "Response": "This error occurs when the VRC_Player is not added to the scene. To fix this, you need to add the VRC_Player prefab to the scene from the VRChat SDK folder."
     },
@@ -145,12 +145,12 @@
         "Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
     },
     {
-        "Code": "error CS0234",
+        "Code": "error cs0234",
         "Message": "does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)",
         "Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
     },
     {
-        "Code": "Component at index",
+        "Code": "component at index",
         "Message": "could not be loaded when loading game object",
         "Response": "Check the version of unity you are using. Confirm you are using Unity version 2019.4.31f1"
     },
@@ -160,67 +160,67 @@
         "Response": "Check the name of the GameObject in the error that is sorrounded by ''. This object most likely is missing a reference to a script it once had. Either drag the script back on or delete the empty reference."
     },
     {
-        "Code": "CS0103",
+        "Code": "cs0103",
         "Message": "The name '' does not exist in the current context",
         "Response": "This error occurs when the variable or class you are trying to use has not been declared or is not in scope. Make sure that the variable or class has been properly declared and that it is in the correct scope."
     },
     {
-        "Code": "CS0111",
+        "Code": "cs0111",
         "Message": "Type '' already defines a member called '' with the same parameter types.",
         "Response": "This occurs when a method or property is defined with the same name and parameters as another method or property in the same class or struct."
     },
     {
-        "Code": "CS0122",
+        "Code": "cs0122",
         "Message": "'' is inaccessible due to its protection level.",
         "Response": "This occurs when trying to access a member that has a more restrictive access level (e.g. private) than the current context."
     },
     {
-        "Code": "CS0246",
+        "Code": "cs0246",
         "Message": "The type or namespace name '' could not be found (are you missing a using directive or an assembly reference?)",
         "Response": "This occurs when a type or namespace is not found in the current project."
     },
     {
-        "Code": "CS0426",
+        "Code": "cs0426",
         "Message": "The type name '' does not exist in the type ''.",
         "Response": "This occurs when a type is not found in the specified namespace or assembly."
     },
     {
-        "Code": "CS1501",
+        "Code": "cs1501",
         "Message": "No overload for method '' takes '' arguments.",
         "Response": "This occurs when calling a method with the wrong number of arguments."
     },
     {
-        "Code": "CS0165",
+        "Code": "cs0165",
         "Message": "Use of unassigned local variable ''.",
         "Response": "This occurs when a local variable is used without being assigned a value first."
     },
     {
-        "Code": "CS1061",
+        "Code": "cs1061",
         "Message": "'' does not contain a definition for '' and no accessible extension method '' accepting a first argument of type '' could be found.",
         "Response": "This occurs when trying to access a member that does not exist on an object."
     },
     {
-        "Code": "CS0051",
+        "Code": "cs0051",
         "Message": "Inconsistent accessibility: parameter type '' is less accessible than method ''.",
         "Response": "This occurs when the accessibility of a parameter is more restrictive than the accessibility of the containing method."
     },
     {
-        "Code": "CS0136",
+        "Code": "cs0136",
         "Message": "A local or parameter named '' cannot be declared in this scope because that name is used in an enclosing scope to define a local or parameter.",
         "Response": "This occurs when a local variable or parameter is declared with the same name as another local variable or parameter in an enclosing scope."
     },
     {
-        "Code": "CS0539",
+        "Code": "cs0539",
         "Message": "'' in explicit interface declaration is not a member of interface.",
         "Response": "This occurs when an explicit interface implementation references a member that does not exist in the interface."
     },
     {
-        "Code": "CS0029",
+        "Code": "cs0029",
         "Message": "Cannot implicitly convert type '' to ''",
         "Response": "This error occurs when you are trying to assign a variable of one type to a variable of another type without an explicit conversion. You need to use a cast or a conversion method to convert the value to the correct type."
     },
     {
-        "Code": "CS0120",
+        "Code": "cs0120",
         "Message": "An object reference is required for the non-static field, method, or property ''",
         "Response": "This error occurs when you are trying to access a non-static member of a class without creating an instance of the class. To fix this, you need to create an instance of the class before accessing the non-static member."
     }
