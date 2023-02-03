@@ -22,3 +22,13 @@ C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\obj\Debug\VRChat E
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\database.json
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\databaseex.json
 C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\common.json
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Abstractions.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Client.Lightweight.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Database.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Abstractions.pdb
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Abstractions.xml
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Client.Lightweight.pdb
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Client.Lightweight.xml
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\Raven.Database.pdb
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\StringMatchingTools.dll
+C:\Users\Ghost\source\repos\VRChat Error Bot\VRChat Error Bot\bin\Debug\StringMatchingTools.pdb

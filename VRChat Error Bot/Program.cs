@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace VRChat_Error_Bot
 {
@@ -16,10 +16,12 @@ namespace VRChat_Error_Bot
         static async Task Main(string[] args)
         {
 
-            v.vType = "Stable";
-            v.v = "v1.3.3";
+            Parsing pars = new Parsing();
 
-            string db = "/database.json";
+            pars.loadData();
+
+            v.vType = "Stable";
+            v.v = "v1.4.0";
 
             Console.WriteLine("Type ? for help.");
 
@@ -28,23 +30,11 @@ namespace VRChat_Error_Bot
             while (true)
             {
 
-                var assembly = Assembly.GetExecutingAssembly();
-                //Getting names of all embedded resources
-                var pathToFile = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + db;
-                var pathToFile2 = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + "/common.json";
-
-                var json = File.ReadAllText(pathToFile);
-                var json2 = File.ReadAllText(pathToFile2);
-
-                List<ErrorCode> errorCodeList = JsonConvert.DeserializeObject<List<ErrorCode>>(json);
-
-                CommonWords commonWords = JsonConvert.DeserializeObject<CommonWords>(json2);
-
                 // Create a list to store the keywords
                 List<string> keywords = new List<string>();
 
                 // Iterate through error codes
-                foreach (ErrorCode errorCode in errorCodeList)
+                foreach (ErrorCode errorCode in pars.ecl)
                 {
                     // Split the code into words
                     string[] words = errorCode.Code.Split(' ');
@@ -56,7 +46,7 @@ namespace VRChat_Error_Bot
                 keywords = keywords.Distinct().ToList();
 
                 // Remove common words
-                keywords = keywords.Except(commonWords.common_words).ToList();
+                keywords = keywords.Except(pars.cw.common_words).ToList();
 
                 isCommand = false;
                 string userInput = Console.ReadLine();
@@ -69,7 +59,43 @@ namespace VRChat_Error_Bot
                     Console.Clear();
                 }
 
-                if (userInput.ToLower().Contains("version"))
+                if (userInput.ToLower().Contains("load"))
+                {
+                    isCommand = true;
+
+                    bool hasInput = true;
+
+                    Console.Clear();
+
+                    if (userInput.ToLower() == "load")
+                    {
+                        Console.WriteLine("Invalid command. Type 'load 'filename' to load a custom databse");
+                        Console.WriteLine("The database file must be .json and formatted correctly, reference the default database.");
+                        hasInput = false;
+                    }
+
+                    if (hasInput == true)
+                    {
+                        string fileName = userInput.Replace("load ", "");
+
+                        if (fileName.Contains(".json"))
+                        {
+
+                            v.vType = "CUSTOM DB: " + Path.GetFileName(fileName);
+                            pars.changePath(true, fileName);
+                            pars.loadData();
+                            Console.WriteLine(Path.GetFileName(fileName) + " has been loaded.");
+                            
+                        }
+                        else
+                        {
+                            Console.WriteLine("Please input a path to a json file like 'load C/%user%/desktop/mydb.json'");
+                        }
+
+                    }
+                }
+
+                if (userInput.ToLower().Contains("mass"))
                 {
 
                     bool hasInput = true;
@@ -78,8 +104,34 @@ namespace VRChat_Error_Bot
 
                     isCommand = true;
 
-                    if (userInput == "version")
+                    if (userInput == "mass")
                     {
+                        Console.WriteLine("Debug: Please input a string to mass check.");
+                        hasInput = false;
+                    }
+
+                    if (hasInput == true)
+                    {
+                        string massInput = userInput.ToLower().Substring("mass ".Length);
+                        BarsComparison comp = new BarsComparison();
+                        comp.massCheck(massInput);
+                        Console.WriteLine("Debug: Mass check has been outputted.");
+                    }
+
+                }
+
+                if (userInput.ToLower().Contains("version"))
+                {
+
+                    bool hasInput = true;
+
+                    Console.Clear();
+
+                    if (userInput.ToLower() == "version")
+                    {
+
+                        isCommand = true;
+
                         Console.WriteLine("Invalid command. Type 'version check' to check current version.");
                         Console.WriteLine("Type 'version stable' to convert to the stable version.");
                         Console.WriteLine("Type 'version experimental' to convert to the stable version.");
@@ -88,7 +140,9 @@ namespace VRChat_Error_Bot
 
                     if (hasInput == true)
                     {
-                        
+
+                        isCommand = true;
+
                         string versionInput = userInput.ToLower().Substring("version ".Length);
                         // Do something with versionInput
                         if (versionInput == "check")
@@ -101,11 +155,12 @@ namespace VRChat_Error_Bot
                                 {
                                     Console.WriteLine("You are currently limited on the GitHub API, please try again in 1+ hour(s).");
                                 }
-                                else 
-                                { 
+                                else
+                                {
                                     Console.WriteLine("You are on the latest version!");
                                 }
-                            } else
+                            }
+                            else
                             {
                                 Console.WriteLine("The latest version is " + v.newV);
                                 Console.WriteLine("Please update at " + v.url);
@@ -116,10 +171,7 @@ namespace VRChat_Error_Bot
                         {
                             Console.WriteLine("Converting to stable version...");
                             v.vType = "Stable";
-                            db = "/database.json";
-                            pathToFile = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + db;
-                            json = File.ReadAllText(pathToFile);
-                            errorCodeList = JsonConvert.DeserializeObject<List<ErrorCode>>(json);
+                            pars.loadData();
 
                             Console.WriteLine("Current version is: " + v.v + " " + v.vType);
                         }
@@ -127,10 +179,8 @@ namespace VRChat_Error_Bot
                         {
                             Console.WriteLine("Converting to experimental version...");
                             v.vType = "Experimental";
-                            db = "/databaseex.json";
-                            pathToFile = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + db;
-                            json = File.ReadAllText(pathToFile);
-                            errorCodeList = JsonConvert.DeserializeObject<List<ErrorCode>>(json);
+                            pars.changePath(false, Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + "/databaseex.json");
+                            pars.loadData();
 
                             Console.WriteLine("Current version is: " + v.v + " " + v.vType);
                         }
@@ -144,7 +194,7 @@ namespace VRChat_Error_Bot
 
                 }
 
-                if (userInput == "?")
+                if (userInput == "?" || userInput == "help")
                 {
                     isCommand = true;
                     Console.Clear();
@@ -162,21 +212,41 @@ namespace VRChat_Error_Bot
 
                     string modifiedInput = Regex.Replace(userInput, @"'(.*?)'", "''");
                     string errorCode = Regex.Match(modifiedInput, @"\b(error|code)?\s?(\d{3})\b").Groups[2].Value;
-                    var error = errorCodeList.Find(e => e.Code.IndexOf(modifiedInput, StringComparison.OrdinalIgnoreCase) >= 0 || e.Message.IndexOf(modifiedInput, StringComparison.OrdinalIgnoreCase) >= 0);
+                    var error = pars.ecl.Find(e => e.Code.IndexOf(modifiedInput, StringComparison.OrdinalIgnoreCase) >= 0 || e.Message.IndexOf(modifiedInput, StringComparison.OrdinalIgnoreCase) >= 0);
+
+                    BarsComparison comp = new BarsComparison();            
 
                     foreach (string keyword in keywords)
                     {
                         if (error != null)
                         {
+                            double weightedAverage = comp.Weight(modifiedInput, error);
+
                             Console.Clear();
                             Console.WriteLine(error.Response);
+                            Console.WriteLine("Confidence rate: " + weightedAverage + "/1");
+                            Console.WriteLine("");
+
                             break;
                         }
                         else if (modifiedInput.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0)
                         {
-                            error = errorCodeList.Find(e => e.Code.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0 || e.Message.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0);
+                            //Console.WriteLine("Debug: Matching using KEYWORDS");
+
+                            error = pars.ecl.Find(e => e.Code.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0 || e.Message.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0);
+
+                            double weightedAverage = comp.Weight(keyword, error);
+
+                            if (weightedAverage > 1)
+                            {
+                                weightedAverage = 1;
+                            }
+
                             Console.Clear();
                             Console.WriteLine(error.Response);
+                            Console.WriteLine("Confidence rate: " + weightedAverage + "/1");
+                            Console.WriteLine("");
+
                             break;
                         }
                     }
@@ -184,6 +254,7 @@ namespace VRChat_Error_Bot
                     if (error == null)
                     {
                         Console.Clear();
+
                         Console.WriteLine("No matching error code or message was found.");
                     }
 

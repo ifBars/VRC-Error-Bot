@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="VRChat Error Bot.exe" version="1.0.0.29" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="VRChat Error Bot.exe" version="1.0.0.49" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="VRChat Error Bot" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -90,42 +90,90 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VRChat Error Bot.exe" size="26592">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Abstractions.dll" size="2636288">
+      <assemblyIdentity name="Raven.Abstractions" version="3.5.9.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xe5a1WuC59mGjFT7nEUmL4h9Mw8Kcc38QqtECCkrYzk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Client.Lightweight.dll" size="3196416">
+      <assemblyIdentity name="Raven.Client.Lightweight" version="3.5.9.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>frAUEeDhWmSs2QDiQvHxhIzF4OdgPaHmoxWq9F0i7Kg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Raven.Database.dll" size="14951424">
+      <assemblyIdentity name="Raven.Database" version="3.5.9.0" publicKeyToken="37F41C7F99471593" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yjyMlAXpBgLi2AOLYUM/pkUaxduita95Xyhngt1pVOo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StringMatchingTools.dll" size="7680">
+      <assemblyIdentity name="StringMatchingTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>X6pBiRIui/erKgXjZYRyGseNN/bPdOTAT5rVAEYCC1Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VRChat Error Bot.exe" size="28640">
       <assemblyIdentity name="VRChat Error Bot" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/mf9d0JjKoGdhm3eVyookASyJFZHskeR3QJDTQWBa3Y=</dsig:DigestValue>
+        <dsig:DigestValue>OoxwKIj49uDVA1wAWVWewDbaMN29C1XJmLTEZexwYkQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="common.json" size="583">
+  <file name="common.json" size="584">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>yAI1ZuFIuZCg9zJKCkUGiCRcDPMc7XVVetMJyK2Bsus=</dsig:DigestValue>
+      <dsig:DigestValue>ncDVUTioeFvQRVADZcsAWX74NlkAaqTbKxXbWzi22As=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="database.json" size="15681">
+  <file name="database.json" size="15277">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RuOHrqCDJcuruZ4vd+wKc3Cd8C9JSo34Wc57OW6fBbM=</dsig:DigestValue>
+      <dsig:DigestValue>2mIcy8aAEJHGJK99slVcXGIfh0QLcRBgD+IVmj8sldU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="databaseex.json" size="15681">
+  <file name="databaseex.json" size="15277">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RuOHrqCDJcuruZ4vd+wKc3Cd8C9JSo34Wc57OW6fBbM=</dsig:DigestValue>
+      <dsig:DigestValue>2mIcy8aAEJHGJK99slVcXGIfh0QLcRBgD+IVmj8sldU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="VRChat Error Bot.exe.config" size="544">
