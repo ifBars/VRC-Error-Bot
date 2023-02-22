@@ -11,4 +11,4 @@
   - Type in any error code, error message, or any questions you have and the bot will tell you if it has found a response or not.
   - This is a very simple bot that runs of matching Regular Expressions, therefore it does not use any real form of AI, and therefore is not highly advanced
   - However with constant database updates, this bot can be a helpful tool to a VRChat developer
-  - For any comments, questions, concerns, DM me on discord, P.Penguin#0420
+  - For any comments, questions, concerns, DM me on discord, P.Penguin#7468
