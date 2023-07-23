@@ -28,7 +28,6 @@ namespace VRChat_Error_Bot
 
             ErrorCode e = new ErrorCode("code", "message", "response");
 
-            var assembly = Assembly.GetExecutingAssembly();
             //Getting names of all embedded resources
             var pathToFile = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + db;
 
